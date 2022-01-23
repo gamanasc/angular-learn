@@ -1,13 +1,14 @@
-<h1>Cadastrar tarefa</h1>
+<h2 class="mb-4">Cadastrar tarefa</h2>
+
 
 <div class="well">
   <!-- #formTarefa -> variável local na view, para o objeto em questão  -->
   <form #formTarefa="ngForm">
     <div class="form-group">
-      <label for="nome">Tarefa:</label>
+      <label for="nome" class="labelTarefa">Tarefa:</label>
       <input
         type="text"
-        class="form-control"
+        class="form-control mb-3"
         id="nome"
         name="nome"
         [(ngModel)]="tarefa.nome"
@@ -30,12 +31,12 @@
     <div class="form-group text-center">
       <input
         type="submit"
-        class="btn btn-success"
+        class="btn btn-sm  btn-success m-1"
         (click)="cadastrar()"
         value="Cadastrar"
         [disabled]="!formTarefa.form.valid">
       <a [routerLink]="['/tarefas']"
-        class="btn btn-default">
+        class="btn btn-sm btn-light m-1">
         <span class="glyphicon glyphicon-chevron-left"
           aria-hidden="true"></span> Voltar
       </a>

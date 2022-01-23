@@ -1,13 +1,19 @@
-<div class="container-fluid">
+<div class="container-fluid container-navbar">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" [routerLink]="['/tarefas/listar']">
-          {{ title }}
+      <div class="navbar-header w-100 my-3">
+        <a class="navbar-brand text-center w-100 d-block" [routerLink]="['/tarefas/listar']">
+          <h1> {{ title }} </h1>
         </a>
       </div>
     </div>
   </nav>
-  <!-- CARREGA CONTEÚDO ABAIXO DE ACORDO COM A ROTA -->
-  <router-outlet></router-outlet>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <!-- CARREGA CONTEÚDO ABAIXO DE ACORDO COM A ROTA -->
+        <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

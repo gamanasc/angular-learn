@@ -1,0 +1,13 @@
+.container-navbar{
+  padding: 0;
+  background: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.container-navbar a{
+  color: #198754;
+}
+
+.navbar{
+  padding: 0;
+}
