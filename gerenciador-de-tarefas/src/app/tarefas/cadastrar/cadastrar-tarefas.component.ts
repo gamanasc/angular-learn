@@ -24,10 +24,6 @@ export class CadastrarTarefasComponent implements OnInit {
     this.tarefa = new Tarefa();
   }
 
-  /**
-   * Método para cadastrar uma nova tarefa no localStorage, caso o formulário seja validado
-   * @returns void
-   */
   cadastrar(): void {
     if (this.formTarefa.form.valid) {
   	  this.tarefaService.cadastrar(this.tarefa);
