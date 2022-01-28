@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 import { ConversorComponent } from './components';
 import { MoedaService, ConversorService } from './services';
+import { NumeroDirective } from './directives';
 
 @NgModule({
   declarations: [
-    ConversorComponent
+    ConversorComponent,
+    NumeroDirective
   ],
   imports: [
     CommonModule,
